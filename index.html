@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rext type </title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vw;
+            background-color: #111;
+            color: rgba(0, 235, 90, 0.822);
+        }
+
+        h3 {
+            font-weight: 400;
+            font-family: 'Roboto Mono', monospace;
+            letter-spacing: 3px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3> I am a <span id="msg"></span></h3>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        referrerpolicy="no-referrer"></script>
+    <script>
+        // type animation
+        var typed = new Typed("#msg", {
+            strings: ["Web Designer", "web Developer", "Content writer", "Graphic Designer"],
+            typeSpeed: 150,
+            BackSpeed: 300,
+            loop: true
+        })
+    </script>
+</body>
+
+</html>
